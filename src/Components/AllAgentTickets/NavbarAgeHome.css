@@ -1,0 +1,23 @@
+.dropdown-toggle {
+    color:#6b6b6b !important;
+  }
+  .dropdown-toggle::after {
+    display: none !important; 
+  }
+
+
+  .form-inline {
+    height: auto;
+    width: 400px;
+    background-color: transparent; /* Change 'none' to 'transparent' */
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: none; /* Change '0px' to 'none' */
+    box-shadow: none;
+    padding: 20px;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}

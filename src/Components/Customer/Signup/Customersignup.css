@@ -1,0 +1,8 @@
+.mx-3{
+    color: red;
+}
+.btn-fix-size:focus,
+.btn-fix-size:active {
+  outline: none;
+  box-shadow: none;
+}
