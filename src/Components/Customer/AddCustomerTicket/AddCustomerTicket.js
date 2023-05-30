@@ -79,12 +79,13 @@ function AddCustomerTicket(props) {
               <Form.Control as="textarea" rows={3} id='discription' />
             </Form.Group>
         <Modal.Footer>
+        <Button variant="warning" type="submit">
+            submit
+          </Button>
           <Button variant="danger" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="warning" type="submit">
-            submite
-          </Button>
+         
         </Modal.Footer>
           </Form>
         </Modal.Body>
