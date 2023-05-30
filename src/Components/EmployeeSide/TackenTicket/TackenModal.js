@@ -68,13 +68,14 @@ function TackenModal(props) {
                             />
                         </Form.Group>
                     
-                        <Button type="submit">Send Comment</Button>
+                        <Button type="submit" variant="warning" >Send Comment</Button>
+                        <Button variant="danger" onClick={props.handleclose}>
+                        Close
+                    </Button>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={props.handleclose}>
-                        Close
-                    </Button>
+                    
     
                 </Modal.Footer>
             </Modal>

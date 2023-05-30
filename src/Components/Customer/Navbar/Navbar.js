@@ -12,7 +12,7 @@ function Navigationbar() {
     <div>
       <Navbar bg="dark" variant="dark" style={{margin:'0',height:'8vh'}}>
         {/* <Container> */}
-          <Navbar.Brand href="#home" style={{marginLeft:'5%'}}>Ticketease</Navbar.Brand>
+          <Navbar.Brand href="/" style={{marginLeft:'5%'}}>Ticketease</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/faq">FAQ</Nav.Link>

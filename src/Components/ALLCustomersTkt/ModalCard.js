@@ -81,13 +81,14 @@ function ModalCard(props) {
                         </Form.Group>
 
 
-                        <Button variant="outline-warning" type="submit">Submit form</Button>
+                        <Button variant="warning" type="submit">Submit form</Button>
+                        <Button variant="danger" onClick={props.handleclose}>
+                        Close
+                    </Button>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-warning" onClick={props.handleclose}>
-                        Close
-                    </Button>
+                   
 
                 </Modal.Footer>
             </Modal>
