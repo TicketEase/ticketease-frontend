@@ -1,0 +1,37 @@
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 0; /* Border radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.dropdown-menu > li > a {
+  color: #333; /* Text color */
+  padding: 10px 15px; /* Spacing */
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #f5f5f5; /* Hover background color */
+  color: #333; /* Hover text color */
+}
+
+.dropdown-menu > .divider {
+  background-color: #ccc; /* Divider color */
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Example Usage */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
