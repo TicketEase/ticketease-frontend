@@ -19,7 +19,7 @@ function NavbarAgeHome(props) {
     <>
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container fluid>
-          <Navbar.Brand href="#">Tiket Ease</Navbar.Brand>
+          <Navbar.Brand href="/">Tiket Ease</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
