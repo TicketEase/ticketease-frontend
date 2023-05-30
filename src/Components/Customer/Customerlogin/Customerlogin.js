@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FAQNav from '../../FAQ/FAQNav';
+import Footer from '../Footer/Footer';
 import {
     MDBBtn,
     MDBContainer,
@@ -70,6 +72,7 @@ function Customerlogin(props) {
     }, [isAuthenticated]);
     return (
         <>
+        <FAQNav/>
             {/* <MDBContainer className="my-5" >
 
                 <MDBCard className="h-25">
@@ -136,7 +139,7 @@ function Customerlogin(props) {
                 <input type="password" placeholder="Password" id="password" />
                 <button type='submit'>Log In</button>
                 <div className="social">
-                    <div className="go" style={{width:'100%'}} onClick={()=>loginWithRedirect()}>
+                    <div className="go1" style={{width:'100%'}} onClick={()=>loginWithRedirect()}>
                         <i className="fab fa-google" /> Google
                     </div>
                   
@@ -144,7 +147,6 @@ function Customerlogin(props) {
             <a className="small text-muted" href="#!">Forgot password?</a>
                                 <Link to="/Customersignup"><p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Don't have an account? <a href="#!" style={{ color: '#393f81' }}>Register here</a></p></Link>
             </form>
-
 
 
 

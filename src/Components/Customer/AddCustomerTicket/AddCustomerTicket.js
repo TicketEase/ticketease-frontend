@@ -10,7 +10,7 @@ import './AddCustomerTicket.css';
 
 
 function AddCustomerTicket(props) {
-
+  
 
   function handleClose() {
     props.hide();
@@ -36,28 +36,28 @@ function AddCustomerTicket(props) {
         console.log(`thanks for contacting us, one of our team will contact you with in 24 hours .`);
         props.hide();
         axios.get(`${process.env.REACT_APP_SERVER_URL}/getCustomerTickets/${props.customerData[0].customerid}`)
-          .then(response => {
-            // console.log('this is the response', response.data);
-            props.refreshTicketsList(response.data);
-
-          }).catch(error => {
-            console.log('this is the error', error);
-          })
+        .then(response => {
+          // console.log('this is the response', response.data);
+          props.refreshTicketsList(response.data);
+          
+        }).catch(error => {
+          console.log('this is the error', error);
+        })
       }).catch(error => { console.log(error); })
 
 
-
+     
 
     // props.refreshTicketsList();
   };
-
+  
 
 
   return (
     <>
 
       <Modal show={props.show} onHide={handleClose} className='modalContainer' >
-        <Modal.Header closeButton className='modalHeader'>
+        <Modal.Header closeButton  className='modalHeader'>
           <Modal.Title>how can we assist you ? </Modal.Title>
         </Modal.Header>
         <Modal.Body className='modalBody'>
@@ -78,15 +78,14 @@ function AddCustomerTicket(props) {
               <Form.Label>detailed discription.</Form.Label>
               <Form.Control as="textarea" rows={3} id='discription' />
             </Form.Group>
-            <Modal.Footer>
-              <Button variant="danger" onClick={handleClose}>
-                Close
-              </Button>
-              <Button variant="warning"
-                type="submit">
-                submit
-              </Button>
-            </Modal.Footer>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="warning" type="submit">
+            submite
+          </Button>
+        </Modal.Footer>
           </Form>
         </Modal.Body>
       </Modal>

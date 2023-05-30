@@ -74,7 +74,7 @@ function Customerpage(props) {
         {/* <Sidebar customerData={customerData}/> */}
         <div style={{ height: '85vh', width: '100%' }} >
           <div className='allRequests' style={{ display: 'flex', flexDirection: 'column', overflow: 'scroll', height: '75vh', width: '100%' }}>
-            <div className='requestAndButton'>
+            {/* <div className='requestAndButton'> */}
               
       
               <Row xs={1} md={3} className="g-4">
@@ -88,7 +88,7 @@ function Customerpage(props) {
               </Row>
 
 
-            </div>
+            {/* </div> */}
           </div>
           <Button className='createButtonTicket' variant="warning" onClick={handleshow} style={{ width: 'auto' }} >submit a request</Button>
         </div>
