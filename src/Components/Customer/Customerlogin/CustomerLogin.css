@@ -14,13 +14,15 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 50%;
+    top: 61%;
 }
 .background .shape {
     height: 200px;
     width: 200px;
     position: absolute;
     border-radius: 50%;
+    top: 80%;
+    left: 70%;
 }
 .shape:first-child {
     background: linear-gradient(#FFD300, #F5F5F5);
@@ -38,13 +40,14 @@ form {
     background-color: rgba(192, 192, 192, 0.3);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 60%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     padding: 20px 20px;
+
 }
 /* form * {
     font-family: 'Poppins', sans-serif;
@@ -231,3 +234,23 @@ button {
 .social i {
   margin-right: 4px;
 } */
+
+.go1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.go1:hover {
+  background-color: #3367D6;
+}
+.go1:active {
+  background-color: #2F5BB7;
+}

@@ -44,12 +44,11 @@ function TackenCards(props) {
       <div className="ag-courses-item_title" style={{height:'2em',padding:'0%'}}>
       {props.agesubject}
       </div>
-      <div style={{ flex: 1, backgroundColor: "#FFF", height: "2px" }} />
-       <div style={{ flex: 1, backgroundColor: "#FFF", height: "2px" }} />
+      
       <div className="ag-courses-item_title" style= {{fontSize:'small'}}>
       {props.agentdescription}
-      <div style={{ flex: 1, backgroundColor: "#FFF", height: "2px" }} />
-      {props.employeecomment}
+      <div style={{ flex: 1, backgroundColor: "#FFF", height: "2px",marginTop:"50px" }} />
+      Employee Comment : {props.employeecomment}
        </div>
        <div style={{ flex: 1, backgroundColor: "#FFF", height: "2px" }} />
        <div className="ag-courses-item_date-box">

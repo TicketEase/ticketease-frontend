@@ -1,12 +1,7 @@
 .footer {
   background:rgb(33,37,41);
-  /* background:red; */
   padding-bottom: 1px;
   padding-top: 1px;
-  position: fixed;
-  bottom: 0px;
-  left: 0;
-  right: 0;
 }
 .footer_menu {
   margin-bottom: 2px;

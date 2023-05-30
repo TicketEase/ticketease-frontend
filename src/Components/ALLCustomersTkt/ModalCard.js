@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import axios from 'axios';
 import './ModalCard.css';
+import { colors } from '@mui/material';
 
 
 
@@ -80,11 +81,11 @@ function ModalCard(props) {
                         </Form.Group>
 
 
-                        <Button type="submit" variant="warning">Submit form</Button>
+                        <Button variant="outline-warning" type="submit">Submit form</Button>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="danger" onClick={props.handleclose}>
+                    <Button variant="outline-warning" onClick={props.handleclose}>
                         Close
                     </Button>
 

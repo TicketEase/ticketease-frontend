@@ -23,7 +23,6 @@ import { useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Footer from './Components/Footer/Footer';
 
 
 
@@ -68,7 +67,6 @@ export default function App() {
       </Routes>
          {customerVarified && <Customerpage customerData={customerData} />}
       {/* <Cardds/> */}
-      {/* <Footer/> */}
     </>
   )
 }

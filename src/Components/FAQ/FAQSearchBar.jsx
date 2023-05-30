@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './FAQSearchBar.css';
+import FAQNav from './FAQNav';
 import CustomNavbar from '../CustomNavbar/CustomNavbar';
+import Footer from '../Footer/Footer';
 function FAQSearchBar() {
   const [searchWord, setSearchWord] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [faqData, setFaqData] = useState([]);
   const [searchErrorMessage, setSearchErrorMessage] = useState('');
+  
 
   useEffect(() => {
     fetchFAQData();
@@ -14,7 +17,7 @@ function FAQSearchBar() {
 
   const fetchFAQData = () => {
     axios
-      .get('https://ticketeaseserver.onrender.com/FAQ')
+      .get('https://ticketeaseserver.onrender.com/faq')
       .then((response) => {
         const data = response.data;
         setFaqData(data);
@@ -64,7 +67,7 @@ function FAQSearchBar() {
 
   return (
     <>
-        <CustomNavbar/>
+        <FAQNav/>
 
 <div className="faq-container">
   <div className="imgHead">
@@ -89,7 +92,7 @@ function FAQSearchBar() {
         value={searchWord}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch} type="button" className="search-button">
+      <button onClick={handleSearch} type="button" className="search-button1">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
           <path
             d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l4.5 4.5 1.5-1.5-4.4-4.4zm-6 0a4.5 4.5 0 1 1 4.5-4.5A4.504 4.504 0 0 1 9.5 14z"
@@ -126,8 +129,9 @@ function FAQSearchBar() {
     )}
   </div>
 </div>
+<Footer/>
     </>
-
+    
   );
 }
 

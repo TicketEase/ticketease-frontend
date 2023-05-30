@@ -12,8 +12,10 @@ import {
 }
   from 'mdb-react-ui-kit';
 import axios from 'axios';
+import FAQNav from '../../FAQ/FAQNav';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Customersignup.css';
 
 function Customersignup() {
   
@@ -79,6 +81,7 @@ function Customersignup() {
 
   return (
     <>
+    <FAQNav/>
 
     {/* <MDBContainer fluid>
 
@@ -145,6 +148,7 @@ function Customersignup() {
                 <div className="shape" />
                 <div className="shape" />
             </div>
+            <div className='form1'>
             <form onSubmit={handleSubmit}>
                 <h3 style={{marginLeft:'-6%'}}>Login Here</h3>
                 <label htmlFor="username">Username</label>
@@ -168,7 +172,7 @@ function Customersignup() {
 
                 <button type='submit'>sign up</button>
                 
-            </form>
+            </form></div>
 
     
     </>
