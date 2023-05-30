@@ -11,11 +11,12 @@
 
 }
 .modalBody{
-    margin-top: 200px !important;
+    margin-top: 100px !important;
+    /* margin-left: 20px; */
 }
 .modal-content{
     width: 700px !important;
-    height: 900px !important;
+    height: auto !important;
     margin-left: -25% !important;
     background-color: whitesmoke !important;
    
@@ -26,5 +27,6 @@
     /* border: 3px solid yellow !important; */
     margin: 0%;
     margin-top: -20%;
+    margin-left: 30px !important;
     /* box-shadow: none; */
 }

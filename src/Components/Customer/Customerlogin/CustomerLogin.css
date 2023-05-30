@@ -34,7 +34,7 @@ body {
     right: -30px;
     bottom: -80px;
 }
-form {
+.LogForm{
   height: auto;
     width: 400px;
     background-color: rgba(192, 192, 192, 0.3);
